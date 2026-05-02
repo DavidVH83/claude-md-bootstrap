@@ -1,4 +1,4 @@
-# CLAUDE.md Bootstrap Prompt
+﻿# CLAUDE.md Bootstrap Prompt
 
 > **How to use:** Paste this as your very first message in a new project session.
 > Claude will ask you one opening question, then intelligently decide what else it
@@ -10,11 +10,11 @@
 
 You are going to help me set up a complete `CLAUDE.md` for this new project.
 
-**Your workflow has five steps — do not skip any. Do not rush ahead.**
+**Your workflow has five steps â€” do not skip any. Do not rush ahead.**
 
 ---
 
-## Step 0 — Check for personal defaults
+## Step 0 â€” Check for personal defaults
 
 Ask exactly this, nothing more:
 
@@ -24,37 +24,37 @@ Ask exactly this, nothing more:
 **Then apply this rule:**
 
 **If the user pastes a previous CLAUDE.md:**
-→ Read it carefully and extract all existing defaults.
-→ Treat every section in it as confirmed unless the user says otherwise.
-→ Do NOT ask questions that are already answered by the pasted file.
-→ In Step 1, only ask about what is project-specific and not yet covered:
+â†’ Read it carefully and extract all existing defaults.
+â†’ Treat every section in it as confirmed unless the user says otherwise.
+â†’ Do NOT ask questions that are already answered by the pasted file.
+â†’ In Step 1, only ask about what is project-specific and not yet covered:
    - Project name and purpose
    - Tech stack (if different from the previous project)
    - Folder structure (if different)
    - Any new protected files or folders
-→ Show the user a short summary of what you extracted:
+â†’ Show the user a short summary of what you extracted:
    ```
    I found these defaults in your previous CLAUDE.md:
-   ✅ Git: main + feature branches, Conventional Commits
-   ✅ Claude's role: write freely, confirm before changing existing files, never delete
-   ✅ Communication: English, short summaries after actions
-   ✅ Code style: snake_case, PEP8, Google docstrings
+   âœ… Git: main + feature branches, Conventional Commits
+   âœ… Claude's role: write freely, confirm before changing existing files, never delete
+   âœ… Communication: English, short summaries after actions
+   âœ… Code style: snake_case, PEP8, Google docstrings
 
    I will only ask you about what is different for this new project.
    ```
 
 **If the user says 'no' or has no previous CLAUDE.md:**
-→ Continue to Step 1 as normal.
+â†’ Continue to Step 1 as normal.
 
 **Wait for my response before continuing.**
 
 ---
 
-## Step 1 — Ask the opening question
+## Step 1 â€” Ask the opening question
 
 Ask exactly this, nothing more:
 
-> "Describe your project in 2–3 sentences. Include: what you are building,
+> "Describe your project in 2â€“3 sentences. Include: what you are building,
 > which language or technology you are using, and what phase you are in
 > (idea, prototype, MVP, production)."
 
@@ -62,7 +62,7 @@ Ask exactly this, nothing more:
 
 ---
 
-## Step 2 — Assess the answer and decide what to ask next
+## Step 2 â€” Assess the answer and decide what to ask next
 
 Read my answer carefully. Apply this rule:
 
@@ -70,31 +70,31 @@ Read my answer carefully. Apply this rule:
 (example: *"I'm building a Python FastAPI backend that connects to a PostgreSQL
 database and exposes a REST API for a mobile app. It's an early prototype, solo
 project, no users yet."*)
-→ Extract everything you can directly from my answer.
-→ Ask **only** for what is genuinely still missing.
-→ Keep the follow-up list short.
+â†’ Extract everything you can directly from my answer.
+â†’ Ask **only** for what is genuinely still missing.
+â†’ Keep the follow-up list short.
 
 **If my answer is vague, incomplete, or uses unclear terms:**
 (example: *"I want to build something with AI"* or *"a website for my business"*)
-→ Do **not** guess or assume anything.
-→ Treat this as a signal that the user needs more guidance.
-→ Ask **all** of the following questions, grouped by category.
-→ Use simple language. Add a short example answer to every question.
+â†’ Do **not** guess or assume anything.
+â†’ Treat this as a signal that the user needs more guidance.
+â†’ Ask **all** of the following questions, grouped by category.
+â†’ Use simple language. Add a short example answer to every question.
 
 ### Full question list (use when answer is vague, or selectively when answer is partial):
 
 ```
-**A — Project Identity**
+**A â€” Project Identity**
 A1  What is the name and one-sentence purpose of this project?
-    (example: "ShopTrack — a tool that helps small shops manage their inventory")
+    (example: "ShopTrack â€” a tool that helps small shops manage their inventory")
 
 A2  Who will use it?
     (example: "just me", "my team of 3", "paying customers", "open source community")
 
 A3  What phase is the project in?
-    (example: "blank slate — nothing built yet", "early prototype", "working MVP", "live in production")
+    (example: "blank slate â€” nothing built yet", "early prototype", "working MVP", "live in production")
 
-**B — Tech Stack**
+**B â€” Tech Stack**
 B1  What programming language(s) are you using?
     (example: "Python", "TypeScript", "both Python backend and React frontend")
     If you don't know yet, say: "not decided yet"
@@ -108,7 +108,7 @@ B3  Where will this run or be hosted?
 B4  Any external services or APIs?
     (example: "Stripe for payments, SendGrid for email" or "none" or "not sure yet")
 
-**C — Folder & File Structure**
+**C â€” Folder & File Structure**
 C1  Do you already have a folder structure, or should Claude suggest one?
     (example: "I have one, I'll describe it" or "suggest one for me")
 
@@ -121,12 +121,12 @@ C3  Do you want to use sub-folder CLAUDE.md files?
     (example: "yes, I want one in /src and one in /tests" or "no, one global file is enough"
     or "not sure yet, suggest when relevant")
 
-C4  If yes to C3 — are there specific rules you already know belong to a sub-folder?
+C4  If yes to C3 â€” are there specific rules you already know belong to a sub-folder?
     (example: "in /tests: always use pytest, never mock the database"
     or "in /src/auth: never modify auth.py without asking")
     If you are not sure yet, say: "we'll add them as the project grows"
 
-**D — Claude's Role**
+**D â€” Claude's Role**
 D1  What can Claude do without asking you first?
     (example: "write new functions, add comments, fix formatting, write tests")
 
@@ -136,7 +136,7 @@ D2  What must Claude always ask before doing?
 D3  What must Claude never do, no matter what?
     (example: "never delete files, never push to git, never run migrations")
 
-**E — Code Style**
+**E â€” Code Style**
 E1  Any naming or formatting rules?
     (example: "snake_case, PEP8, Google docstrings" or "just be consistent")
     If you don't know, say: "use the standard for the language"
@@ -144,14 +144,14 @@ E1  Any naming or formatting rules?
 E2  How should tests be written?
     (example: "pytest, one test per function" or "no tests yet")
 
-**F — Git & Workflow**
+**F â€” Git & Workflow**
 F1  Do you use git? If yes, what is your branching strategy?
     (example: "yes, main + feature branches" or "yes, main only" or "no git yet")
 
 F2  Any commit message format?
     (example: "Conventional Commits: feat:, fix:, chore:" or "no preference")
 
-**G — Communication**
+**G â€” Communication**
 G1  What language for code comments and explanations?
     (example: "English for everything" or "Dutch explanations, English code")
 
@@ -163,7 +163,7 @@ G3  How should Claude handle errors or blockers?
 ```
 
 **Important rules for this step:**
-- If the user answers "I don't know" or "not sure yet" → accept it and leave that section out of the CLAUDE.md entirely. Do not guess.
+- If the user answers "I don't know" or "not sure yet" â†’ accept it and leave that section out of the CLAUDE.md entirely. Do not guess.
 - Never proceed to Step 3 if critical information (language, purpose, Claude's role) is still missing.
 - If something is still unclear after the first follow-up, ask again. Clarity before speed.
 
@@ -171,44 +171,44 @@ G3  How should Claude handle errors or blockers?
 
 ---
 
-## Step 3 — Confirm what you have
+## Step 3 â€” Confirm what you have
 
 Before generating, list every piece of information you have collected:
 
 ```
 Here is what I have so far:
 
-✅ Project: ShopTrack — inventory tool for small shops
-✅ Language: Python 3.11
-✅ Framework: FastAPI + SQLAlchemy
-✅ Phase: early prototype
-✅ Claude may freely: write functions, add tests, fix formatting
-✅ Claude must confirm: adding dependencies, changing existing files
-✅ Claude must never: delete files, touch .env
-✅ Git: main + feature branches, Conventional Commits
-✅ Communication: English, short summaries after actions
-✅ Sub-folder CLAUDE.md: yes — /src and /tests
-✅ Sub-folder rules known: /tests → always pytest, never mock the database
-❌ Hosting: not decided yet → section omitted
-❌ Tests style: not decided yet → section omitted
+âœ… Project: ShopTrack â€” inventory tool for small shops
+âœ… Language: Python 3.11
+âœ… Framework: FastAPI + SQLAlchemy
+âœ… Phase: early prototype
+âœ… Claude may freely: write functions, add tests, fix formatting
+âœ… Claude must confirm: adding dependencies, changing existing files
+âœ… Claude must never: delete files, touch .env
+âœ… Git: main + feature branches, Conventional Commits
+âœ… Communication: English, short summaries after actions
+âœ… Sub-folder CLAUDE.md: yes â€” /src and /tests
+âœ… Sub-folder rules known: /tests â†’ always pytest, never mock the database
+âŒ Hosting: not decided yet â†’ section omitted
+âŒ Tests style: not decided yet â†’ section omitted
 ```
 
 Then ask:
-> "✅ Does this look right? Correct anything wrong, or type **'generate'** to continue."
+> "âœ… Does this look right? Correct anything wrong, or type **'generate'** to continue."
 
 **Wait for my response before continuing.**
 
 ---
 
-## Step 4 — Generate the CLAUDE.md
+## Step 4 â€” Generate the CLAUDE.md
 
 Generate the complete `CLAUDE.md` inside a fenced code block (` ```markdown `),
 ready to copy into the project root.
 
-### Hard rules for generation — no exceptions:
+### Hard rules for generation â€” no exceptions:
 
 - **No placeholders.** Never write "fill in later", "TBD", or leave a field blank.
-  If you don't have the information → omit the entire section.
+  If you don't have the information â†’ omit the entire section.
 - **No guessing.** Every line must come from what the user explicitly told you.
 - **No padding.** No filler text, encouragement, or generic advice.
 - **Be specific.** Every line should reflect this exact project, not any project.
@@ -247,7 +247,7 @@ If sub-folder CLAUDE.md files are used:
 
 When adding a sub-folder CLAUDE.md, use this structure:
 
-# CLAUDE.md — /folder-name
+# CLAUDE.md â€” /folder-name
 
 Inherits all rules from root CLAUDE.md unless overridden below.
 
@@ -255,7 +255,7 @@ Inherits all rules from root CLAUDE.md unless overridden below.
 - ...
 
 ## Protected files
-- Never modify: `filename.py` — reason: ...
+- Never modify: `filename.py` â€” reason: ...
 
 ## Local conventions
 - ...
@@ -267,9 +267,9 @@ Include a short code snippet if a pattern is non-obvious.
 
 ### 5. Claude's Role
 Three clearly separated lists:
-- ✅ **Do freely** — actions Claude can take without asking
-- ⚠️ **Always confirm** — actions that require explicit approval
-- 🚫 **Never do** — hard limits, no exceptions
+- âœ… **Do freely** â€” actions Claude can take without asking
+- âš ï¸ **Always confirm** â€” actions that require explicit approval
+- ðŸš« **Never do** â€” hard limits, no exceptions
 
 ### 6. Git & Workflow
 Branch naming, commit message format, what to never commit.
@@ -285,12 +285,12 @@ Preferred level of detail.
 How to report errors and blockers.
 
 ### 9. Environment Variables
-Variable names only — never values.
+Variable names only â€” never values.
 Which are prod-only.
 
 ---
 
-## Universal Sections — Always Include Verbatim
+## Universal Sections â€” Always Include Verbatim
 
 **These sections are the same in every project. Copy them exactly as written below.
 Do not modify, summarize, or adapt them. They are maintained centrally.**
@@ -303,12 +303,12 @@ Do not modify, summarize, or adapt them. They are maintained centrally.**
 Vault: `C:\Users\David\ObsidianVault\KnowledgeBase\`
 Skill: `obsidian-knowledge-bank`
 
-**Sessiestart — altijd doen:**
-1. Vault raadplegen — zoek naar relevante notes over het onderwerp
+**Sessiestart â€” altijd doen:**
+1. Vault raadplegen â€” zoek naar relevante notes over het onderwerp
 2. Kort melden wat je gevonden hebt (of dat er niets relevant was)
 3. Dan pas beginnen met de eigenlijke taak
 
-**Sessie-afsluiting — altijd doen:**
+**Sessie-afsluiting â€” altijd doen:**
 Sla learnings proactief op. Bepaal zelf waar de kennis thuishoort:
 
 | Type kennis | Vault locatie |
@@ -321,7 +321,7 @@ Sla learnings proactief op. Bepaal zelf waar de kennis thuishoort:
 
 Gebruik altijd het sessie-learning formaat:
 ```
-## [Datum] — [Korte sessietitel]
+## [Datum] â€” [Korte sessietitel]
 ### Wat gedaan
 ### Wat geleerd
 ### Beslissingen genomen
@@ -337,24 +337,24 @@ Zie `vault-context.md` voor projectspecifieke vault links.
 
 ### Nooit het eerste antwoord aanvaarden
 Het eerste antwoord is het startpunt, niet het eindpunt.
-Na elk substantieel antwoord: vraag minstens één alternatief, kritiek of edge case.
+Na elk substantieel antwoord: vraag minstens Ã©Ã©n alternatief, kritiek of edge case.
 
-### SPARKS — Actief toepassen
+### SPARKS â€” Actief toepassen
 | Techniek | Gebruik wanneer |
 |---|---|
-| **Pivot Roles** | Laat mij de vragen stellen: *"Ask me questions to clarify my thinking — one at a time"* |
+| **Pivot Roles** | Laat mij de vragen stellen: *"Ask me questions to clarify my thinking â€” one at a time"* |
 | **Ask for More** | Na elk antwoord: 3 varianten of een alternatief perspectief |
 | **Reframe (HMW)** | Bij vastlopen: *"Herformuleer als 3 verschillende How Might We vragen"* |
-| **Strategic Pause** | Build → Critique → Rebuild. Evalueer voor je finaliseert. |
+| **Strategic Pause** | Build â†’ Critique â†’ Rebuild. Evalueer voor je finaliseert. |
 
 ### Cognitive Bias Checks
 Benoem actief bij elke bewering:
-- **[Feit]** — verifieerbaar
-- **[Inference]** — logische afleiding
-- **[Speculatie]** — onzeker
+- **[Feit]** â€” verifieerbaar
+- **[Inference]** â€” logische afleiding
+- **[Speculatie]** â€” onzeker
 
 ### Workflow Classification
-Bij nieuwe taken: classificeer eerst de AI-exposure (E0–E11) voor je begint.
+Bij nieuwe taken: classificeer eerst de AI-exposure (E0â€“E11) voor je begint.
 Skill: `workflow-classification`
 
 ### Handige prompts
@@ -367,14 +367,30 @@ HMW Reframe: *"Herformuleer dit probleem als 3 verschillende 'How Might We...?' 
 ```markdown
 ## Gedragsregels
 
-- Geen fake zekerheid — onderscheid [Feit] / [Inference] / [Speculatie]
+- Geen fake zekerheid â€” onderscheid [Feit] / [Inference] / [Speculatie]
 - Bij vage of hoog-stakes vragen: eerst verduidelijken, dan uitvoeren
-- Push terug als een aanname zwak is — wees een Devil's Advocate
-- Stap-voor-stap met checkpoints, niet alles in één keer
-- Nooit placeholders in output — volledig invullen of expliciet vragen wat ontbreekt
-- Gebruik AI op zwaktes, niet op sterktes — behoud persoonlijke differentiatie
+- Push terug als een aanname zwak is â€” wees een Devil's Advocate
+- Stap-voor-stap met checkpoints, niet alles in Ã©Ã©n keer
+- Nooit placeholders in output â€” volledig invullen of expliciet vragen wat ontbreekt
+- Gebruik AI op zwaktes, niet op sterktes â€” behoud persoonlijke differentiatie
 ```
 
 ---
 
+
+### 13. Boekbibliotheek
+
+`markdown
+## Boekbibliotheek
+
+23 AI/LLM e-books beschikbaar op:
+`C:\Users\David\Documents\Claude toegang\Books\`
+Skill: `book-library`
+
+Raadpleeg automatisch de relevante boeken wanneer je iets bouwt gerelateerd aan
+LLMs, MCP, RAG, agents, fine-tuning of LLMOps — doe dit VOOR de implementatie.
+Dekking: MCP (Python + TypeScript), RAG, Agentic AI, LLM Engineering,
+LangChain, LlamaIndex, LLMOps, NLP, PyTorch.
+`
 **Start with Step 0 now.**
+
