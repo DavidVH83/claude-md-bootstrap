@@ -290,4 +290,91 @@ Which are prod-only.
 
 ---
 
+## Universal Sections — Always Include Verbatim
+
+**These sections are the same in every project. Copy them exactly as written below.
+Do not modify, summarize, or adapt them. They are maintained centrally.**
+
+### 10. Knowledge Bank
+
+```markdown
+## Knowledge Bank
+
+Vault: `C:\Users\David\ObsidianVault\KnowledgeBase\`
+Skill: `obsidian-knowledge-bank`
+
+**Sessiestart — altijd doen:**
+1. Vault raadplegen — zoek naar relevante notes over het onderwerp
+2. Kort melden wat je gevonden hebt (of dat er niets relevant was)
+3. Dan pas beginnen met de eigenlijke taak
+
+**Sessie-afsluiting — altijd doen:**
+Sla learnings proactief op. Bepaal zelf waar de kennis thuishoort:
+
+| Type kennis | Vault locatie |
+|---|---|
+| Opgelost probleem, bug, fout | `04-Insights/[beschrijving].md` |
+| Tool, MCP, installatie | `03-Tools/[juiste submap]/` |
+| Conceptuele kennis, theorie | `01-Learning/Artikels/[thema].md` |
+| Nieuw project ontdekt | `02-Projects/[naam]/README.md` |
+| Beslissing genomen | `02-Projects/[naam]/decisions.md` |
+
+Gebruik altijd het sessie-learning formaat:
+```
+## [Datum] — [Korte sessietitel]
+### Wat gedaan
+### Wat geleerd
+### Beslissingen genomen
+### Volgende stap
+```
+Zie `vault-context.md` voor projectspecifieke vault links.
+```
+
+### 11. AI Session Quality
+
+```markdown
+## AI Sessiekwaliteit
+
+### Nooit het eerste antwoord aanvaarden
+Het eerste antwoord is het startpunt, niet het eindpunt.
+Na elk substantieel antwoord: vraag minstens één alternatief, kritiek of edge case.
+
+### SPARKS — Actief toepassen
+| Techniek | Gebruik wanneer |
+|---|---|
+| **Pivot Roles** | Laat mij de vragen stellen: *"Ask me questions to clarify my thinking — one at a time"* |
+| **Ask for More** | Na elk antwoord: 3 varianten of een alternatief perspectief |
+| **Reframe (HMW)** | Bij vastlopen: *"Herformuleer als 3 verschillende How Might We vragen"* |
+| **Strategic Pause** | Build → Critique → Rebuild. Evalueer voor je finaliseert. |
+
+### Cognitive Bias Checks
+Benoem actief bij elke bewering:
+- **[Feit]** — verifieerbaar
+- **[Inference]** — logische afleiding
+- **[Speculatie]** — onzeker
+
+### Workflow Classification
+Bij nieuwe taken: classificeer eerst de AI-exposure (E0–E11) voor je begint.
+Skill: `workflow-classification`
+
+### Handige prompts
+Strategic Pause: *"Evalueer wat we tot nu toe gedaan hebben. Wat klopt? Wat mist? Wat zouden we anders aanpakken?"*
+HMW Reframe: *"Herformuleer dit probleem als 3 verschillende 'How Might We...?' vragen."*
+```
+
+### 12. Gedragsregels
+
+```markdown
+## Gedragsregels
+
+- Geen fake zekerheid — onderscheid [Feit] / [Inference] / [Speculatie]
+- Bij vage of hoog-stakes vragen: eerst verduidelijken, dan uitvoeren
+- Push terug als een aanname zwak is — wees een Devil's Advocate
+- Stap-voor-stap met checkpoints, niet alles in één keer
+- Nooit placeholders in output — volledig invullen of expliciet vragen wat ontbreekt
+- Gebruik AI op zwaktes, niet op sterktes — behoud persoonlijke differentiatie
+```
+
+---
+
 **Start with Step 0 now.**
